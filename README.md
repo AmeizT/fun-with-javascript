@@ -1,4 +1,4 @@
-This is a [Pure Javascript](https://js.org/) project.
+This is a [Pure Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) project with a bit of [Typescript](https://www.typescriptlang.org/).
 
 ## Getting Started
 
@@ -8,9 +8,10 @@ Download the neccessary dependencies.
 
 ```sass and sass-loader
 npm i --save-dev sass sass-loader
-
-    Live Server (optional if you're using vscode)
 ```
+
+Install Live Server on vscode.
+
 <!-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
