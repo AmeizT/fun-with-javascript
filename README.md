@@ -2,15 +2,20 @@ This is a [Pure Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 ## Getting Started
 
-First, clone the [Github Repository](https://github.com/AmeizT/fun-with-javascript.git).
+1. First, clone the [Github Repository](https://github.com/AmeizT/fun-with-javascript.git).
 
-Download the neccessary dependencies.
+```clone the repo
+git clone https://{YOUR_GITHUB_PERSONAL_ACCESS_TOKEN}@github.com/AmeizT/AmeizT/fun-with-javascript.git
+```
+Learn more about creating [Personal Access Tokens](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+
+2. Download dependencies
 
 ```sass and sass-loader
 npm i --save-dev sass sass-loader
 ```
 
-Install Live Server on vscode.
+3. Install Live Server on vscode.
 
 <!-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -22,7 +27,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Learn More
 
-The project uses pure and modern javascript functions. The project is suitable for beginners.
+You will learn more javascript and typescript using practical examples.
 
 <!-- To learn more about Next.js, take a look at the following resources:
 
