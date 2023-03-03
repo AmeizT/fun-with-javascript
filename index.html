@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Fun With Javascript</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="Ameiz T">
     <link rel="stylesheet" href="./css/app.css" type="text/css">
-    <script src="./js/app.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./dist/main.css" type="text/css">
+    <script src="./js/index.js" type="module" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="hello-world">
             <h1 class="message"></h1>
-            <h5 class="disco-current"></h5>
-            <button data-action="greet">Tap to say hello!</button>
-            <button class="changer">Disco Magic**</button>
+            <button data-action="greet">Tap here</button>
         </div>
 
-        <div class="numbers">
-            <button class="decrease">-</button>
-            <span>0</span>
-            <button class="increase">+</button>
-        </div>
+        
+        <section class="disco-lights">
+            <header>
+                <h2>How to make a button that changes the background of the entire page</h2>
+                <p>In this example, we make a button that changes sets background color of the page to a different and unique color everytime the user taps on the button. It's Disco Magic!</p>
+            </header>
+            
+            <div class="disco">
+                <h5 class="disco-current"></h5>
+                <button class="changer">Disco Magic</button>
+            </div>
+        </section>
 
-        <code></code>
+        <section class="making-a-counter">
+            <header>
+                <h2>How to make a simple number counter</h2>
+                <p>In this example, we make a number counter. The increase (+) button increases the output number while the decrease (-) button decreases the output but not beyond 0.</p>
+            </header>
+
+            <div class="counter">
+                <button data-type="decrease" class="counter-button decrease">Decrease</button>
+                <span data-type="counter">0</span>
+                <button data-type="increase" class="counter-button increase">Increase</button>
+            </div>
+        </section>
     </div>
     
 </body>

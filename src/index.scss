@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Urbanist:wght@400;500;600;700;800;900&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Questrial', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+h1, h2 {
+    line-height: 1.25;
+}
+
+p, pre {
+    line-height: 24px;
+}
+
+button {
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.hello-world {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.disco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .changer {
+        height: fit-content;
+        background-color: #fff;
+    }
+}
+
+.disco-current {
+    width: fit-content;
+    padding: 12px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .counter-button {
+        padding: 12px 16px;
+        border-radius: 5px;
+    }
+
+    [data-type="counter"] {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        line-height: 0;
+    }
+}
+

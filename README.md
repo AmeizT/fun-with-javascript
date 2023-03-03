@@ -5,7 +5,7 @@ This is a [Pure Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 1. First, clone the [Github Repository](https://github.com/AmeizT/fun-with-javascript.git).
 
 ```clone the repo
-git clone https://{YOUR_GITHUB_PERSONAL_ACCESS_TOKEN}@github.com/AmeizT/AmeizT/fun-with-javascript.git
+git clone https://{YOUR_GITHUB_PERSONAL_ACCESS_TOKEN}@github.com/AmeizT/fun-with-javascript.git
 ```
 Learn more about creating [Personal Access Tokens](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 

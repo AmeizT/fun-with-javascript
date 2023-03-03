@@ -1,0 +1,1 @@
+import { componentDidMount, randint } from "./modules/hex-generator.js";

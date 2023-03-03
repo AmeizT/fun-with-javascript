@@ -4,7 +4,7 @@ const randoStr = Math.random(1, hex)
 const decrease = document.querySelector(".decrease")
 const increase = document.querySelector(".increase")
 const calculator = document.querySelector("span")
-let output = 1
+let output = 0
 const hello = document.querySelector("[data-action='greet']")
 const message = document.querySelector(".message")
 const app = document.querySelector("body")
@@ -12,11 +12,10 @@ const changer = document.querySelector(".changer")
 const discoCurrent = document.querySelector(".disco-current")
 const reviewCode = document.querySelector("code")
 
-function componentDidMount(){
+export function componentDidMount(){
     message.innerHTML = "Hello, world!"
     app.style.backgroundColor = genRandomHex()
-    discoCurrent.innerHTML = genRandomHex()
-    whatIsTheCode()
+    discoCurrent.innerText = genRandomHex()
 }
 
 componentDidMount()
@@ -31,13 +30,18 @@ hello.addEventListener("click", (e) => {
 })
 
 increase.addEventListener("click", (event) => {
-    console.log(output)
-    calculator.innerHTML = output++
+    output = output + 1
+    calculator.innerText = output
 })
 
 decrease.addEventListener("click", (event) => {
-    console.log(output)
-    calculator.innerHTML = output--
+    output = output - 1
+    if(output <= 0){
+        output = 0
+        calculator.innerText = output
+    } else {
+        calculator.innerText = output
+    }
 })
 
 function genRandomHex(){
@@ -55,13 +59,13 @@ changer.addEventListener("click", changeBackground)
 function whatIsTheCode(){
     reviewCode.innerHTML = `
         <pre>function changeBackground(){</pre>
-                    <pre>app.style.backgroundColor = genRandomHex()</pre>
+        <pre>app.style.backgroundColor = genRandomHex()</pre>
                     <pre>discoCurrent.innerHTML = genRandomHex()</pre>
         <pre>}</pre>
     `;
 }
 
-function randint(){
+export function randint(){
     let rand = Math.floor((Math.random() * 10000)) + 1
     console.log(rand)
 }

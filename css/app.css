@@ -1,13 +1,2 @@
-.hello-world {
-    display: flex;
-    flex-direction: column;
-}
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
 
-.container div {
-    padding: 1rem 0;
-}
